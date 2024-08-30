@@ -1,0 +1,18 @@
+/* App component styles */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Header styles */
+.Header {
+  background-color: #007bff;
+  color:blue;
+  padding: 20px;
+  width: 200vh;
+}
+
+/* Main content styles */
+.Main {
+  padding: 20px;
+}

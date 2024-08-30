@@ -1,0 +1,123 @@
+/* DataTable.css */
+
+/* Table styles */
+.data-table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 50px;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #000000; /* Dark black border */
+  padding: 8px;
+  text-align: left;
+  color: #000000;
+}
+
+.data-table th {
+  background-color: #c5d9f5; /* Light blue background */
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #e0ebf8; /* Very light blue background */
+}
+
+/* Modal styles */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 255, 0.4); /* Transparent blue background */
+}
+
+.modal-content {
+  background-color: #bdd7ee; /* Light blue background */
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #6c8eb1; /* Dark blue border */
+  width: 80%;
+  max-width: 600px;
+}
+
+.close {
+  color: #4f6d8e; /* Dark blue text */
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #2a4d6d; /* Slightly darker blue text on hover/focus */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Button styles */
+.edit-button {
+  margin-right: 10px; /* Add margin to create space between Edit and Delete buttons */
+}
+
+/* Form styles */
+.modal-content form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  
+}
+
+.modal-content label {
+  font-weight: bold;
+  color: #336699; /* Medium blue text */
+}
+
+.modal-content input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #b5d1ff; /* Lighter blue border */
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Button styles */
+.modal-content button {
+  background-color: #4b88c5; /* Medium blue button background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.modal-content button.edit-button {
+  margin-right: 10px; /* Add margin to create space between Edit and Delete buttons */
+}
+
+.modal-content button:last-child {
+  margin-right: 0; /* Remove margin from the last button */
+}
+
+.modal-content button:hover {
+  background-color: #2a4d6d; /* Darker blue on hover */
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 600px) {
+  .data-table {
+    margin-left: 0; /* Adjust margin for smaller screens */
+  }
+  
+  .modal-content {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+  }
+}
